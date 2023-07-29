@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
     //Ouverture de la page de connexion
     ouvrirPageConnexion() {
         // Utiliser le routeur pour naviguer vers le nouveau composant
-        this.router.navigate(['/signup']);
+        this.router.navigate(['/connexion']);
       }
     sidebarOpen() {
         const toggleButton = this.toggleButton;

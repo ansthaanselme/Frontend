@@ -5,7 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SignupComponent } from './signup/signup.component';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 @NgModule({
     imports: [
@@ -15,7 +15,7 @@ import { SignupComponent } from './signup/signup.component';
     ],
     declarations: [
         LandingComponent,
-        SignupComponent,
+        ConnexionComponent,
         ProfileComponent
     ]
 })
