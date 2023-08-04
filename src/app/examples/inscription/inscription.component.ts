@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {MatIconModule} from '@angular/material/icon';
+import { NgModule } from '@angular/core';
+
+
+
+
 
 @Component({
   selector: 'app-inscription',
