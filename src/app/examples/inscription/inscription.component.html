@@ -3,7 +3,7 @@
       <div class="filter"></div>
           <div class="container">
               <div class="row">
-                  <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                  <div class="col-lg-10 col-sm-6 mr-auto ml-auto">
                     <div class="card card-register">
                         <h4 class="title">Inscrivez-vous pour accéder à tous nos services </h4>
                         <div class="social-line text-center">
@@ -18,98 +18,96 @@
                             </a>
                         </div>
                         <form class="register-form">
-
-                          <label>Nom & Prénoms</label>
-                          <div class="input-group form-group-no-border" >
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <mat-icon>person_pin</mat-icon>
-                              </span>
+                          <div class="row">
+                            <div class="col-md-6 mr-auto ml-auto">
+                              <!-- Première colonne du formulaire -->
+                              <form class="register-form">
+                                <label>Nom & Prénoms</label>
+                                <div class="input-group form-group-no-border">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <mat-icon>person_pin</mat-icon>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Nom & Prénoms">
+                                </div>
+                    
+                                <label>Email</label>
+                                <div class="input-group form-group-no-border">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <mat-icon>email</mat-icon>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false">
+                                </div>
+                    
+                                <label>Mot de passe</label>
+                                <div class="input-group form-group-no-border">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <mat-icon>vpn_key</mat-icon>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Mot de passe" (focus)="focus1=true" (blur)="focus1=false">
+                                </div>
+                    
+                                <label>Confirmez le mot de passe</label>
+                                <div class="input-group form-group-no-border">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Confirmez le mot de passe" (focus)="focus1=true" (blur)="focus1=false">
+                                </div>
+                              </form>
                             </div>
-                            <input type="text" class="form-control" placeholder="Nom & Prénoms">
-                          </div>
+                            <div class="col-md-6">
+                              <!-- Deuxième colonne du formulaire -->
+                              <form class="register-form">
+                                <label>Téléphone</label>
+                                <div class="input-group form-group-no-border">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                      <mat-icon>phone</mat-icon>
+                                    </span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Téléphone">
+                                </div>
+                    
+                                <label>Type d'utilisateur : </label><br/>
+                                <div class="form-check form-check-inline">                             
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                    Client                                 
+                                </div>
+                                <div class="form-check form-check-inline">                               
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">
+                                    Propriétaire de matériels
+                                </div>
 
-
-                            <label>Email</label>
-                            <div class="input-group form-group-no-border" >
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <mat-icon> email</mat-icon>
-                                </span>
-                              </div>
-
-                                <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
-                            </div>
-
-
-                            <label>Mot de passe</label>
-                            <div class="input-group form-group-no-border" >
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                  <mat-icon> vpn_key</mat-icon>
-                                </span>
-                              </div>
-                                <input type="text" class="form-control" placeholder="Mot de passe" (focus)="focus1=true" (blur)="focus1=false" >
-                            </div>
-
-
-                            <label>Confirmez le mot de passe</label>
-                            <div class="input-group form-group-no-border" >
-                              <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    
-                                </span>
-                              </div>
-                                <input type="text" class="form-control" placeholder="Confirmez le mot de passe" (focus)="focus1=true" (blur)="focus1=false" >
-                            </div>
-
-
-                            <label>Téléphone</label>
-                          <div class="input-group form-group-no-border" >
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">
-                                  <mat-icon>phone</mat-icon>
-                              </span>
-                            </div>
-
-                            <input type="text" class="form-control" placeholder="Téléphone">
-                          </div>
-
-                          <label>Type d'utilisateur</label>
-                          <div class="form-check-radio">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-                              Client
-                              <span class="form-check-sign"></span>
-                            </label>
-                          </div>
-                          <div class="form-check-radio">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked="">
-                              Propriétaire de matériels
-                              <span class="form-check-sign"></span>
-                            </label>
-                          </div>
-
-
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile">
-                            <label class="custom-file-label" for="customFile">Choisir un fichier</label>
-                          </div>
-
-
+                                           
+                               
+                                <label>Chargez les documents de vérification ici </label>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <label class="custom-file-label" for="customFile">formats acceptés : PDF, JPG, PNG</label>
+                                </div><br/><br/>
+                    
                           
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <input class="form-check-input" type="checkbox" value="">
-                              Accepter les <a href="#"></a>conditions d'utilisations
-                              <span class="form-check-sign"></span>
-                            </label>
-                           </div>
-
-
-                            <button class="btn btn-danger btn-block btn-round">Créer un compte</button>
+                                <div class="form-check form-check-inline">                             
+                                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                  Accepter les <a href="#"> conditions d'utilisations </a>                              
+                                </div>
+                    
+                                <button class="btn btn-danger btn-block btn-round">Créer un compte</button>
+                              </form>
+                            </div>
+                          </div>
                         </form>
+                        
+                        
+                         
                         
                         
                     </div>
